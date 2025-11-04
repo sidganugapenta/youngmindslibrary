@@ -1,40 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Young Minds Library</title>
+  <meta name="description" content="The Young Minds Library Project empowers children in rural India through inclusive classroom libraries, promoting literacy, community, and the joy of reading." />
+  <meta name="keywords" content="Empowerment, Literacy, Inclusion, Community, Inspiration, Rural Education, Libraries, Nonprofit India" />
+  <meta name="author" content="Young Minds Library Project" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Young Minds Library Project" />
+  <meta property="og:description" content="Empowering young minds in rural India through the magic of reading." />
+  <meta property="og:image" content="images/yml_logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://youngmindslibrary.org/" />
+
+  <title>Young Minds Library Project</title>
+
+  <!-- Fonts & Basic Styles -->
   <link rel="stylesheet" href="style.css">
-  <script>
-    // Smooth scroll for navigation (works in all modern browsers)
-    document.addEventListener("DOMContentLoaded", function() {
-      document.querySelectorAll('a[data-scroll]').forEach(function(anchor) {
-        anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          if (!target) return;
-          window.scrollTo({
-            top: target.offsetTop - 60,
-            behavior: 'smooth'
-          });
-        });
-      });
-    });
-  </script>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #fafafa;
+      color: #333;
+    }
+    header {
+      background: #1f3c88;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .site-logo { width: 60px; vertical-align: middle; }
+    .site-title { margin: 0.5rem 0; font-size: 1.8rem; }
+    nav a {
+      color: white;
+      margin: 0 0.75rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 { color: #1f3c88; border-bottom: 2px solid #ffca28; padding-bottom: 0.3rem; }
+    ul { list-style: disc; margin-left: 1.5rem; }
+    footer {
+      text-align: center;
+      background: #1f3c88;
+      color: white;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .social a { color: #1f3c88; text-decoration: none; font-weight: 600; }
+    .social a:hover { text-decoration: underline; }
+    @media (max-width: 600px) {
+      nav { display: flex; flex-wrap: wrap; justify-content: center; }
+      nav a { margin: 0.3rem; font-size: 0.9rem; }
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="logo-wrap">
-      <!-- Replace images/yml_logo.png with your uploaded logo path -->
-      <img src="images/yml_logo.png" alt="Young Minds Library Project logo" class="site-logo">
-      <h1 class="site-title">Young Minds Library Project</h1>
-      <p class="tagline">Empowering Young Minds in Rural India Through the Magic of Reading</p>
-    </div>
+  <header>
+    <img src="images/yml_logo.png" alt="Young Minds Library Project logo" class="site-logo">
+    <h1 class="site-title">Young Minds Library Project</h1>
+    <p class="tagline">Empowering Young Minds in Rural India Through the Magic of Reading</p>
 
-    <nav class="top-nav">
+    <nav>
       <a href="#home" data-scroll>Home</a>
       <a href="#about" data-scroll>About</a>
-      <a href="#what" data-scroll>What We Do</a>
+      <a href="#what" data-scroll>Programs</a>
       <a href="#impact" data-scroll>Impact</a>
       <a href="#involved" data-scroll>Get Involved</a>
       <a href="#contact" data-scroll>Contact</a>
@@ -42,89 +83,72 @@
   </header>
 
   <main>
-    <section id="home" class="section home-section">
-      <!-- Banner placeholder: add a banner image at images/banner.jpg later -->
-      <div class="banner-placeholder">
-        <p>Banner image placeholder — replace with images/banner.jpg</p>
-      </div>
-
-      <div class="intro">
-        <p class="lead">
-          Young Minds Library Project is a youth-led non-profit initiative founded by a 14-year-old brother and his 11-year-old sister, and run by student volunteers. We create classroom libraries and run reading programs for underprivileged children in rural Andhra Pradesh.
-        </p>
-      </div>
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>Young Minds Library Project is a youth-led non-profit founded by two siblings—aged 14 and 11—who share a passion for reading and education. Together with student volunteers, we build classroom libraries and organize reading sessions for underprivileged children in rural Andhra Pradesh, India.</p>
     </section>
 
-    <section id="about" class="section">
+    <section id="about">
       <h2>Our Mission</h2>
       <p>To empower young minds in rural India through the magic of reading — encouraging literacy, creativity, and confidence. We believe every child deserves access to books — no fines, no barriers, no discrimination.</p>
     </section>
 
-    <section id="what" class="section">
+    <section id="what">
       <h2>What We Do</h2>
-      <div class="grid">
-        <div>
-          <h3>Classroom Libraries</h3>
-          <ul>
-            <li>Books available: 3,300+</li>
-            <li>Languages: English & Telugu</li>
-            <li>Age group: 8–15 years</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Reading Programs</h3>
-          <ul>
-            <li>Read-Aloud Sessions</li>
-            <li>Readathons & Rewards</li>
-            <li>Book lending: ~2 books per student per week</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Community Engagement</h3>
-          <p>Led by student volunteers and trained library leaders to make reading fun and inclusive.</p>
-        </div>
+      <div>
+        <h3>📚 Classroom Libraries</h3>
+        <p>Over 3,300 books across English and Telugu, reaching students aged 8–15 years in 3 villages.</p>
+        <h3>🎤 Reading Programs</h3>
+        <p>Weekly read-alouds, readathons, and rewards that inspire children to explore new worlds through books.</p>
+        <h3>🤝 Community Engagement</h3>
+        <p>Led by 67 trained student volunteers who foster inclusivity, teamwork, and joy in learning.</p>
       </div>
     </section>
 
-    <section id="impact" class="section">
-      <h2>Impact</h2>
-      <ul class="impact-list">
+    <section id="impact">
+      <h2>Our Impact</h2>
+      <ul>
         <li>3 schools in Andhra Pradesh</li>
         <li>23 classroom libraries</li>
         <li>1,041 students served</li>
-        <li>3,300 books catalogued</li>
-        <li>67 student volunteers</li>
         <li>Average monthly footfall: 180 readers</li>
       </ul>
-
-      <p class="goal"><strong>Goal:</strong> Expand to 10 schools and build 50+ classroom libraries.</p>
+      <p><strong>Goal:</strong> Expand to 10 schools and build 50+ classroom libraries by next year.</p>
     </section>
 
-    <section id="involved" class="section">
+    <section id="involved">
       <h2>Get Involved</h2>
-      <p>Volunteer, donate, or collaborate with us to build more classroom libraries.</p>
-      <p><strong>Email:</strong></p>
+      <p>Join our mission! You can volunteer, donate books, or collaborate with us to bring reading joy to more children.</p>
       <ul>
-        <li>manasartms@gmail.com</li>
-        <li>manasa.ganugapenta@brookhill.org</li>
+        <li>Email: <a href="mailto:manasartms@gmail.com">manasartms@gmail.com</a></li>
+        <li>Email: <a href="mailto:manasa.ganugapenta@brookhill.org">manasa.ganugapenta@brookhill.org</a></li>
       </ul>
     </section>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
+    <section id="contact">
+      <h2>Contact Us</h2>
       <p>Andhra Pradesh, India</p>
       <p>Operating hours: 9 AM – 4 PM</p>
-
       <div class="social">
-        <a href="https://x.com/YMLProject" target="_blank" rel="nofollow noopener">Twitter (@YMLProject)</a>
+        <a href="https://x.com/YMLProject" target="_blank" rel="noopener">Follow us on Twitter (@YMLProject)</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Young Minds Library Project — All rights reserved</p>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <footer>
+    <p>© <span id="year"></span> Young Minds Library Project — All rights reserved.</p>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Smooth scroll
+    document.querySelectorAll('a[data-scroll]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) window.scrollTo({ top: target.offsetTop - 60, behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 </html>
-
