@@ -4,20 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="The Young Minds Library Project empowers children in rural India through inclusive classroom libraries, promoting literacy, community, and the joy of reading." />
-  <meta name="keywords" content="Empowerment, Literacy, Inclusion, Community, Inspiration, Rural Education, Libraries, Nonprofit India" />
-  <meta name="author" content="Young Minds Library Project" />
-
-  <!-- Open Graph / Social Media -->
-  <meta property="og:title" content="Young Minds Library Project" />
-  <meta property="og:description" content="Empowering young minds in rural India through the magic of reading." />
-  <meta property="og:image" content="images/yml_logo.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://youngmindslibrary.org/" />
-
   <title>Young Minds Library Project</title>
 
-  <!-- Fonts & Basic Styles -->
-  <link rel="stylesheet" href="style.css">
   <style>
     body {
       margin: 0;
@@ -36,7 +24,6 @@
       z-index: 10;
     }
     .site-logo { width: 60px; vertical-align: middle; }
-    .site-title { margin: 0.5rem 0; font-size: 1.8rem; }
     nav a {
       color: white;
       margin: 0 0.75rem;
@@ -46,32 +33,42 @@
     nav a:hover { text-decoration: underline; }
     section {
       padding: 3rem 1.5rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
     h2 { color: #1f3c88; border-bottom: 2px solid #ffca28; padding-bottom: 0.3rem; }
-    ul { list-style: disc; margin-left: 1.5rem; }
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    .image-gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+    .image-gallery img:hover {
+      transform: scale(1.05);
+    }
     footer {
       text-align: center;
       background: #1f3c88;
       color: white;
       padding: 1rem;
-      font-size: 0.9rem;
-    }
-    .social a { color: #1f3c88; text-decoration: none; font-weight: 600; }
-    .social a:hover { text-decoration: underline; }
-    @media (max-width: 600px) {
-      nav { display: flex; flex-wrap: wrap; justify-content: center; }
-      nav a { margin: 0.3rem; font-size: 0.9rem; }
     }
   </style>
 </head>
+
 <body>
   <header>
-    <img src="images/yml_logo.png" alt="Young Minds Library Project logo" class="site-logo">
-    <h1 class="site-title">Young Minds Library Project</h1>
-    <p class="tagline">Empowering Young Minds in Rural India Through the Magic of Reading</p>
-
+    <img src="Photos/YML_Logo.png" alt="Young Minds Library Project logo" class="site-logo">
+    <h1>Young Minds Library Project</h1>
+    <p>Empowering Young Minds in Rural India Through the Magic of Reading</p>
     <nav>
       <a href="#home" data-scroll>Home</a>
       <a href="#about" data-scroll>About</a>
@@ -85,23 +82,40 @@
   <main>
     <section id="home">
       <h2>Welcome</h2>
-      <p>Young Minds Library Project is a youth-led non-profit founded by two siblings—aged 14 and 11—who share a passion for reading and education. Together with student volunteers, we build classroom libraries and organize reading sessions for underprivileged children in rural Andhra Pradesh, India.</p>
+      <p>We are a youth-led initiative creating classroom libraries for children in rural Andhra Pradesh. Founded by a 14-year-old brother and his 11-year-old sister, our mission is to make reading accessible and enjoyable for every child.</p>
+      <div class="image-gallery">
+        <img src="Photos/Reading.png" alt="Children enjoying reading sessions">
+        <img src="images/Books.png" alt="Pile of books ready for donation">
+      </div>
     </section>
 
     <section id="about">
       <h2>Our Mission</h2>
       <p>To empower young minds in rural India through the magic of reading — encouraging literacy, creativity, and confidence. We believe every child deserves access to books — no fines, no barriers, no discrimination.</p>
+      <div class="image-gallery">
+        <img src="Photos/Exploration.png" alt="Volunteers arranging classroom libraries">
+        <img src="images/Discussions.png" alt="Students exploring classroom library">
+      </div>
     </section>
 
     <section id="what">
-      <h2>What We Do</h2>
-      <div>
-        <h3>📚 Classroom Libraries</h3>
-        <p>Over 3,300 books across English and Telugu, reaching students aged 8–15 years in 3 villages.</p>
-        <h3>🎤 Reading Programs</h3>
-        <p>Weekly read-alouds, readathons, and rewards that inspire children to explore new worlds through books.</p>
-        <h3>🤝 Community Engagement</h3>
-        <p>Led by 67 trained student volunteers who foster inclusivity, teamwork, and joy in learning.</p>
+      <h2>Programs</h2>
+      <h3>📚 Classroom Libraries</h3>
+      <p>Over 3,300 books in English and Telugu — reaching 1,041 students in 23 classroom libraries.</p>
+      <div class="image-gallery">
+        <img src="Photos/Books.png" alt="Books neatly arranged on shelves">
+      </div>
+
+      <h3>🎤 Reading Programs</h3>
+      <p>We run engaging read-aloud sessions and readathons to inspire curiosity and love for stories.</p>
+      <div class="image-gallery">
+        <img src="Photos/Reading.png" alt="Children participating in read-aloud session">
+      </div>
+
+      <h3>🤝 Community Engagement</h3>
+      <p>Led by 67 student volunteers who foster inclusion and joy in learning.</p>
+      <div class="image-gallery">
+        <img src="images/Discussions.png" alt="Group photo of volunteers">
       </div>
     </section>
 
@@ -111,14 +125,18 @@
         <li>3 schools in Andhra Pradesh</li>
         <li>23 classroom libraries</li>
         <li>1,041 students served</li>
-        <li>Average monthly footfall: 180 readers</li>
+        <li>3,300+ books catalogued</li>
       </ul>
       <p><strong>Goal:</strong> Expand to 10 schools and build 50+ classroom libraries by next year.</p>
+      <div class="image-gallery">
+        <img src="Photos/Books.png" alt="Book donation event">
+        <img src="Photos/Guidance.png" alt="Children smiling after receiving new books">
+      </div>
     </section>
 
     <section id="involved">
       <h2>Get Involved</h2>
-      <p>Join our mission! You can volunteer, donate books, or collaborate with us to bring reading joy to more children.</p>
+      <p>You can volunteer, donate books, or collaborate with us to expand access to reading in rural India.</p>
       <ul>
         <li>Email: <a href="mailto:manasartms@gmail.com">manasartms@gmail.com</a></li>
         <li>Email: <a href="mailto:manasa.ganugapenta@brookhill.org">manasa.ganugapenta@brookhill.org</a></li>
@@ -129,8 +147,8 @@
       <h2>Contact Us</h2>
       <p>Andhra Pradesh, India</p>
       <p>Operating hours: 9 AM – 4 PM</p>
-      <div class="social">
-        <a href="https://x.com/YMLProject" target="_blank" rel="noopener">Follow us on Twitter (@YMLProject)</a>
+      <div>
+        <a href="https://x.com/YMLProject" target="_blank">Follow us on Twitter (@YMLProject)</a>
       </div>
     </section>
   </main>
