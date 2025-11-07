@@ -120,25 +120,51 @@ main{
   color: #fff;  /*
 }
 /* Responsive adjustments */
-@media (max-width:800px){
-  .grid{grid-template-columns: 1fr; }
-  .site-logo{ width:90px; }
-  .top-nav{ font-size:0.9rem; gap:0.6rem; flex-wrap:wrap; }
-}
-/* HERO SECTION TEXT COLOR */
-#home,
-#home h2,
-#home p,
-#home .cta {
-  color: #fff;   /* <-- makes hero text white */
-}
 /* HERO section layout improvements */
 #home {
-  padding-top: calc(var(--nav-height) + 2rem); /* adds space below header */
+  padding-top: calc(var(--nav-height) + 2rem);
   padding-bottom: 4rem;
   text-align: center;
 }
 
+/* HERO text color */
+#home,
+#home h2,
+#home p,
+#home .cta {
+  color: #fff;
+}
 
+/* Improve readability */
+#home h2,
+#home p {
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.35);
+}
 
+#home h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
 
+#home p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0.5rem auto 1.5rem;
+}
+
+#home .cta {
+  background: var(--accent);
+  padding: 0.75rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#home .cta:hover {
+  background: #195f5b;
+}  
+@media (max-width:800px){
+  .grid{grid-template-columns: 1fr; }
+  .site-logo{ width:90px; }
+  .top-nav{ font-size:0.9rem; gap:0.6rem; flex-wrap:wrap; }
