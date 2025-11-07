@@ -132,6 +132,13 @@ main{
 #home .cta {
   color: #fff;   /* <-- makes hero text white */
 }
+/* HERO section layout improvements */
+#home {
+  padding-top: calc(var(--nav-height) + 2rem); /* adds space below header */
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
 
 
 
