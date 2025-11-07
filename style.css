@@ -125,5 +125,13 @@ main{
   .site-logo{ width:90px; }
   .top-nav{ font-size:0.9rem; gap:0.6rem; flex-wrap:wrap; }
 }
+/* HERO SECTION TEXT COLOR */
+#home,
+#home h2,
+#home p,
+#home .cta {
+  color: #fff;   /* <-- makes hero text white */
+}
+
 
 
