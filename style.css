@@ -116,11 +116,14 @@ main{
   color:var(--muted);
   font-size:0.95rem;
 }
-
+#home {
+  color: #fff;  /*
+}
 /* Responsive adjustments */
 @media (max-width:800px){
   .grid{grid-template-columns: 1fr; }
   .site-logo{ width:90px; }
   .top-nav{ font-size:0.9rem; gap:0.6rem; flex-wrap:wrap; }
 }
+
 
