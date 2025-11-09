@@ -25,14 +25,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <style>
-    :root {
-      --primary: #1f3c88;
-      --accent: #1565c0;
-      --text: #333333;
-      --bg: #fafafa;
-      --radius: 10px;
-      --shadow: 0 4px 12px rgba(0,0,0,.08);
-    }
+	:root {
+	  --primary: #006d77;  /* teal-blue */
+	  --accent: #ffb703;   /* warm amber */
+	  --text: #1b1b1b;
+	  --bg: #f9fafb;
+	}
+	header { background: #e0f7fa; } /* light cyan */
+	nav a { color: var(--primary); }
+	nav a:hover, nav a.active { background: var(--primary); color: #fff; }
+
     * { box-sizing: border-box; }
     body {
       margin: 0; font-family: "Poppins", system-ui, -apple-system, Arial, sans-serif;
@@ -304,8 +306,8 @@
       <div class="slider">
         <div class="slide"><img src="Images/Exploaration_HD.jpg" alt="Child smiling after receiving a book" loading="lazy"></div>
 		<div class="slide"><img src="Images/Reading_HD.jpg" alt="Children reading" loading="lazy"></div>
-		<div class="slide"><img src="Images/Reading_2.jpg" alt="Reading after receiving a book" loading="lazy"></div>
-		<div class="slide"><img src="Images/Books_suitcase.jpg" alt="Books In Suitcase" loading="lazy"></div>
+		/<div class="slide"><img src="Images/Reading_2.jpg" alt="Reading after receiving a book" loading="lazy"></div>/
+		/<div class="slide"><img src="Images/Books_suitcase.jpg" alt="Books In Suitcase" loading="lazy"></div>/
 		<div class="slide"><img src="Images/Unsorted_Books.jpg" alt="Books Ready to Donate" loading="lazy"></div>  
         <div class="slide"><img src="Images/Books.jpg" alt="Books ready for donation" loading="lazy"></div>
         <div class="slide"><img src="Images/Teaching.jpeg" alt="Teacher guiding students" loading="lazy"></div>
@@ -420,6 +422,7 @@
   </script>
 </body>
 </html>
+
 
 
 
