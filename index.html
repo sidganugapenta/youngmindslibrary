@@ -66,16 +66,40 @@
     nav a:hover, nav a.active { background: var(--primary); color: #fff; }
 
     /* Hero */
-    #home {
-      background: linear-gradient(rgba(31,60,136,.3), rgba(31,60,136,.3)), url("Images/.jpg") center/cover no-repeat;
-      color: #fff; text-align: center; padding: 6rem 1.25rem;
-    }
-    #home h2 { font-size: clamp(2rem, 4vw, 3rem); margin: 0 0 .75rem; }
-    .cta { display: inline-block; margin-top: .75rem; background: var(--accent); color: var(--primary);
-      font-weight: 700; text-decoration: none; padding: .8rem 1.4rem; border-radius: 999px; transition: .25s;
-    }
-    .cta:hover { transform: translateY(-3px); box-shadow: 0 8px 16px rgba(255,202,40,.35); }
+#home {
+  background-image:
+    linear-gradient(rgba(31,60,136,.35), rgba(31,60,136,.35)),
+    url("Images/Libraryimage.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
+  color: #fff;
+  text-align: center;
+  padding: 6rem 1.25rem;
+}
+
+#home h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0 0 .75rem;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: .75rem;
+  background: var(--accent);
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+  padding: .8rem 1.4rem;
+  border-radius: 999px;
+  transition: .25s;
+}
+
+.cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(255,202,40,.35);
+}
     /* Sections */
     section { padding: 3.5rem 1.25rem; max-width: 1200px; margin: 0 auto; }
     h2 { color: var(--primary); display: inline-block; border-bottom: 3px solid var(--accent); padding-bottom: .25rem; margin-bottom: 1.5rem; }
@@ -420,6 +444,7 @@
   </script>
 </body>
 </html>
+
 
 
 
